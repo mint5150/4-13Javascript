@@ -1,0 +1,44 @@
+1.var、let、constの使用についてまとめてください。
+varは再宣言、再代入どちらも可能
+値が上書きされてしまって分かりにくくなり、バグにもなりやすいので使わない
+
+varは再宣言はできるが再代入はできない
+再代入が必要などconstで対応できない場合にはletを使う
+
+constは再宣言、再代入どちらも不可
+値を固定できるので分かりやすく、再代入などletが必要な場面以外では基本的にconstを使う
+
+【JavaScript】var / let / const を本気で使い分けてみた
+https://qiita.com/cheez921/items/7b57835cb76e70dd0fc4
+
+JavaScriptで書く「var,let,const」の違いと使い分け方法
+https://techacademy.jp/magazine/14872
+
+
+2.なぜvarを使わない理由をまとめてください。
+
+エラーが出るべき時に出ない
+→リリースしたら、重要な値が実はundefinedのままだった
+
+JavaScriptの変数宣言はletにすべきか 『入門JavaScriptプログラミング』から解説
+https://codezine.jp/article/detail/11353
+
+JavaScriptでvarが非推奨な理由を整理してみた
+https://qiita.com/taiju_suzuki/items/49ed558bd837452353b8
+
+【JavaScript】varとfunction"文"は使わずにletとconstを使って欲しい（切実）
+https://qiita.com/mejileben/items/b8502173216aebae8d36
+
+
+3.定数とは?
+定義時に値を入れ、それ以降書き換えることができない器
+
+JavaScript の定数
+https://javascript.keicode.com/lang/constants.php#:~:text=JavaScript%20%E3%81%AE%E3%80%8C%E5%AE%9A%E6%95%B0%E3%80%8D%E3%81%A8%E3%81%84%E3%81%86%E3%81%AE,%E3%81%8C%E4%B8%8A%E6%9B%B8%E3%81%8D%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%8F%E3%81%AA%E3%82%8A%E3%81%BE%E3%81%99%E3%80%82
+
+const
+https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Statements/const
+
+【今さら聞けない】JavaScriptの変数・定数 let / var / const の使い分け方
+https://ma-vericks.com/javascript-variable/
+https://www.javadrive.jp/javascript/var/index8.html
